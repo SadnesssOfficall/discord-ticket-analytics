@@ -1,0 +1,10 @@
+ticketId,author,authorRole,timestamp
+1001,alice,user,2026-03-02T09:00:00Z
+1001,ticket-bot,bot,2026-03-02T09:01:00Z
+1001,mod_jo,staff,2026-03-02T09:10:00Z
+1002,"Smith, Bob",user,2026-03-02T09:30:00Z
+1002,mod_li,staff,2026-03-02T09:50:00Z
+1003,carol,user,2026-03-03T14:00:00Z
+1003,ticket-bot,bot,2026-03-03T14:05:00Z
+1004,dave,user,2026-03-09T09:15:00Z
+1004,mod_jo,staff,2026-03-09T10:15:00Z

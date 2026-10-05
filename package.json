@@ -1,0 +1,72 @@
+{
+  "name": "discord-ticket-analytics",
+  "version": "0.1.0",
+  "description": "Analyze support ticket data from JSON, CSV or Discord: response times, workload per staff member, busiest hours and a static HTML report.",
+  "keywords": [
+    "discord",
+    "tickets",
+    "analytics",
+    "support",
+    "response-time",
+    "csv",
+    "cli",
+    "report"
+  ],
+  "license": "MIT",
+  "author": "Sadness",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "discord-ticket-analytics": "dist/cli/bin.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SadnesssOfficall/discord-ticket-analytics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SadnesssOfficall/discord-ticket-analytics/issues"
+  },
+  "homepage": "https://github.com/SadnesssOfficall/discord-ticket-analytics#readme",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "prepublishOnly": "npm run lint && npm test && npm run build"
+  },
+  "peerDependencies": {
+    "discord.js": "^14.0.0"
+  },
+  "peerDependenciesMeta": {
+    "discord.js": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.4",
+    "eslint": "^10.12.0",
+    "prettier": "^3.9.9",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.71.0",
+    "vitest": "^4.1.11"
+  }
+}

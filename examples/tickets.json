@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1001",
+    "createdAt": "2026-03-02T09:00:00Z",
+    "closedAt": "2026-03-02T11:00:00Z",
+    "user": "alice",
+    "staff": "mod_jo",
+    "category": "billing",
+    "status": "closed",
+    "messages": [
+      { "author": "alice", "authorRole": "user", "timestamp": "2026-03-02T09:00:00Z" },
+      { "author": "ticket-bot", "authorRole": "bot", "timestamp": "2026-03-02T09:01:00Z" },
+      { "author": "mod_jo", "authorRole": "staff", "timestamp": "2026-03-02T09:10:00Z" }
+    ]
+  },
+  {
+    "id": "1003",
+    "createdAt": "2026-03-03T14:00:00Z",
+    "user": "carol",
+    "category": "support",
+    "status": "open",
+    "messages": [
+      { "author": "carol", "authorRole": "user", "timestamp": "2026-03-03T14:00:00Z" },
+      { "author": "ticket-bot", "authorRole": "bot", "timestamp": "2026-03-03T14:05:00Z" }
+    ]
+  }
+]
